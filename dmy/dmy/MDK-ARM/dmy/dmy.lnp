@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"dmy\system_stm32f1xx.o"
+"dmy\main.o"
+"dmy\stm32f1xx_it.o"
+"dmy\stm32f1xx_hal_msp.o"
+"dmy\gpio.o"
+"dmy\rtc.o"
+"dmy\usart.o"
+"dmy\stm32f1xx_hal_gpio.o"
+"dmy\stm32f1xx_hal_dma.o"
+"dmy\stm32f1xx_hal_pwr.o"
+"dmy\stm32f1xx_hal_gpio_ex.o"
+"dmy\stm32f1xx_hal_cortex.o"
+"dmy\stm32f1xx_hal_flash.o"
+"dmy\stm32f1xx_hal_tim_ex.o"
+"dmy\stm32f1xx_hal_rtc.o"
+"dmy\stm32f1xx_hal_rtc_ex.o"
+"dmy\stm32f1xx_hal_uart.o"
+"dmy\stm32f1xx_hal_tim.o"
+"dmy\stm32f1xx_hal_rcc_ex.o"
+"dmy\stm32f1xx_hal.o"
+"dmy\stm32f1xx_hal_flash_ex.o"
+"dmy\stm32f1xx_hal_rcc.o"
+"dmy\startup_stm32f100xb.o"
+--library_type=microlib --strict --scatter "dmy\dmy.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dmy.map" -o dmy\dmy.axf
